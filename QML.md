@@ -36,31 +36,24 @@ QML具有信号和处理机制，其中信号是事件，信号通过信号处�
 MouseArea中有mouse对象可以用
 ## Timer
 ### 属性
-* `interval : int` 
-
+* `interval : int`  
 设置计时器时间间隔，以毫秒为单位，默认时间间隔为1000毫秒
-* `repeat : bool` 
-
+* `repeat : bool`  
 设置计时器是否重复，默认值为`false`
-* `running : bool` 
-
+* `running : bool`  
 设置是否启动计时器，`true`为启动，`false`为停止，默认值为`false`  
 对于不重复的定时器，当定时器触发后，`running`会被置为`false`
-* `triggeredOnStart : bool` 
-
+* `triggeredOnStart : bool`  
 设置当计时器启动时立即触发  
 如果repeat属性设置为`true`，则会在指定时间间隔再重复触发  
 如果repeat属性设置为`false`，则会在指定时间间隔再触发一次（共触发两次）
 ### 信号
-* `triggered()`
+* `triggered()`  
 当定时器超时时，这个信号就会发出，对应的处理程序是：`onTriggered`.  
 ### 方法
-* `restart()` 重启计时器
-
+* `restart()` 重启计时器  
 如果计时器没有运行，它将被启动，否则它将被停止，重新设置为初始状态并启动。在调用`restart()`之后，`running`属性将置为`true`
-* `start()` 启动计时器
-
+* `start()` 启动计时器  
 如果计时器已经在运行，调用该方法没有任何效果。在调用`start()`之后，`running`属性将置为`true`
-* `stop()` 停止计时器
-
+* `stop()` 停止计时器  
 如果计时器没有运行，调用该方法没有效果。在调用`stop()`之后，运行的属性将是`false`
