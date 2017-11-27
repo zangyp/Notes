@@ -25,3 +25,4 @@
 * `git branch -d <branch.name>` 删除分支  
 * `git push orign --delete <branch.name>` 删除远程分支  
 * `git branch -dr <remote/branch>` 删除远程分支  
+* `ssh-keygen -t rsa -C "email@example.com"` 生成ssh key
